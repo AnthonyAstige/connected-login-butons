@@ -1,0 +1,8 @@
+<template name="connectedLoginButtons">
+	{{#if online}}
+		{{> loginButtons}}
+	{{/if}}
+	{{#unless online}}
+		{{user.username}} (offline)
+	{{/unless}}
+</template>
