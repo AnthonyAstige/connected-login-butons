@@ -3,6 +3,8 @@
 		{{> loginButtons}}
 	{{/if}}
 	{{#unless online}}
-		{{user.username}} (offline)
+		<span class="disconnected-login-status">
+			{{user.username}} (offline)
+		</span>
 	{{/unless}}
 </template>
